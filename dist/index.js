@@ -55,7 +55,7 @@ function getNdk(version, addToPath) {
             core.info('Extracting...');
             const extractPath = yield tc.extractZip(downloadPath);
             core.info('Adding to the cache...');
-            toolPath = yield tc.cacheDir(path.join(extractPath, `android-ndk-${version}`), 'ndk', version);
+            toolPath = yield tc.cacheDir(path.join(extractPath, `android-ndk-r24-beta3`), 'ndk', version);
             core.info('Done');
         }
         if (addToPath) {
