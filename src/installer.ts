@@ -24,7 +24,7 @@ export async function getNdk(
 
     core.info('Adding to the cache...')
     toolPath = await tc.cacheDir(
-      path.join(extractPath, `android-ndk-${version}`),
+      path.join(extractPath, `android-ndk-r24-beta3`),
       'ndk',
       version
     )
